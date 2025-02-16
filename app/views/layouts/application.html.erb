@@ -1,13 +1,101 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Link-in-bio</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    
+    <title>Andrew Dippel's Link-in-bio</title>
+    
+    <style>
+    /* 
+    * {
+      border: 1px solid blue;
+    }
+    */
+
+    html {
+      min-height: 100%;
+    }
+
+    body {
+      min-height: 100%;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background: linear-gradient(15deg, #142850, #14365f, #13476f, #125d80, #107792, #0d96a5, #09b8b4, #04ccb1);
+      color: rgb(255, 255, 255);
+      font-family: "Impact";
+      }
+      
+      a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+      }
+
+/* Other declarations */
+
+  .avatar-image {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    border-radius: 128px;
+  }
+
+  .thumbnail {
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+  object-fit: cover;
+}
+
+  .item {
+    background-color: rgb(29, 177, 172);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 1000px;
+    padding: 5px;
+    padding-right: 48px;
+    box-shadow: 4px 4px 10px 0px rgba(122,32,122,0.5);
+  }
+
+  .main-container {
+    max-width: 640px;
+    margin: auto;
+  }
+
+  .image-row {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .name-row {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+  }
+
+  .social-icons-row {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .link-text {
+    text-align: center;
+    flex-grow: 1;
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+  }
+
+  </style>
   </head>
 
   <body>
